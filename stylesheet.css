@@ -1,0 +1,547 @@
+/* 共通 */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1300px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@font-face {
+	font-family: 'CorpoFontB';
+	src: url(./fonts/Corporate-Logo-Bold-ver2.ttf) format('truetype');
+}
+
+
+/* ヘッダー */
+header {
+  background-color: #ffe35f;
+  color: black;
+  height: 64px;
+  width: 100%;
+  position :fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.header-logo {
+  display: inline-block;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-right a {
+  height: 64px;
+  line-height: 65px;
+  font-size: 23px;
+  padding: 3px 25px 0px 25px;
+  color: rgb(39, 39, 39);
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-down-line {
+  position: fixed;
+  height: 74px;
+  width: 100%;
+  background-color: black;
+  z-index: 99;
+}
+
+/* メイン */
+  /* トップ */
+  .top-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .top-img-01 {
+    position: absolute;
+    top: -35px;
+    width: 100%;
+    height: 100%;
+    object-position: 100% 100%;
+    z-index: -10;
+  }
+
+  .top-img-02 {
+    position: absolute;
+    top: -30px;
+    left: 100px;
+    width: 90%;
+  }
+
+  .top-img-03 {
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    width: 33%;
+    z-index: 60;
+  }
+
+  .top-img-04 {
+    position: absolute;
+    top: 17.5%;
+    left: 3%;
+    width: 33%;
+    z-index: 50;
+  }
+
+  .top-img-05 {
+    position: absolute;
+    top: 13%;
+    left: 0%;
+    width: 33%;
+    z-index: 40;
+  }
+
+  .top-img-06 {
+    position: absolute;
+    top: 44%;
+    left: 32%;
+    width: 10%;
+    z-index: 59;
+  }
+
+  .top-img-07 {
+    position: absolute;
+    top: 45%;
+    left: 33%;
+    width: 10%;
+    z-index: 50;
+  }
+
+  .top-img-08 {
+    position: absolute;
+    top: 43%;
+    left: 31%;
+    width: 10%;
+    z-index: 40;
+  }
+
+  .top-img-09 {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 50%;
+    z-index: 60;
+  }
+
+  .top-img-10 {
+    position: absolute;
+    top: 32%;
+    left: 41%;
+    width: 50%;
+    z-index: 50;
+  }
+
+  .top-img-11 {
+    position: absolute;
+    top: 27.5%;
+    left: 39%;
+    width: 50%;
+    z-index: 40;
+  }
+
+  .separate2-img {
+    position: absolute;
+    top: 66%;
+    width: 100%;
+  }
+
+  .separate2 {
+    padding-top: 50%;
+    width: 100%;
+  }
+
+  .separate2-space {
+    background-color: #ffe35f;
+    width: 100%;
+    height: 150px;
+  }
+
+  .first_kyouryoku {
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    width: 78%;
+  }
+
+/* アントレクレストの概要 */
+.exp-title {
+  font-family: 'CorpoFontB';
+  font-size: 40px;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.exp-catch-copy {
+  width: 90%;
+  padding-left: 50px;
+}
+
+.exp {
+  font-family: 'HiraKakuProN-W6';
+  font-size: 35px;
+  padding-top: 50px;
+}
+
+.separate1 {
+  font-size: 0;
+}
+
+.separate1-img {
+  width: 100%;
+}
+
+/*　なぜ今起業家が必要なのか */
+.explanation2 {
+  background-color: #ffe35f;
+}
+
+.exp2-title {
+  font-family: 'CorpoFontB';
+  font-size: 48px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.exp2 {
+  font-size: 32px;
+}
+
+.exp2-detail {
+  display: flex;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.exp2-detail-img {
+  width: 50%;
+}
+
+.exp2-detail-title {
+  font-size: 32px;
+}
+
+.exp2-detail-exp {
+  font-size: 24px;
+}
+
+.exp2-detail-left {
+  width: 50%;
+  margin-left: 300px;
+  padding: 0 100px;
+}
+
+.exp2-detail-left-up {
+  padding-top: 30px;
+}
+
+.exp2-detail-left-down {
+  padding-top: 30px;
+}
+
+.exp2-detail-right {
+  width: 50%;
+  margin-right: 300px;
+  padding: 0 100px;
+}
+
+.exp2-detail-right-up {
+  padding-top: 30px;
+}
+
+.exp2-detail-right-down {
+  padding-top: 30px;
+}
+
+.exp2-bottom {
+  font-size: 32px;
+  padding-bottom: 50px;
+}
+
+/* 特徴 */
+.feature-title {
+  font-family: 'CorpoFontB';
+  font-size: 72px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.feature-element-title {
+  font-family: 'CorpoFontB';
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.feature-element-detail {
+  font-size: 28px;
+}
+
+.feature-element-1 {
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.feature-element-1-image {
+  position: relative;
+  padding-left: 40px;
+  width: 50%;
+  z-index: 10;
+}
+
+.feature-element-1-background{
+  position: absolute;
+  width: 34%;
+  padding-top: 30px;
+  padding-left: 680px;
+}
+
+.feature-element-2 {
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.feature-element-2-image {
+  position: relative;
+  padding-right: 70px;
+  width: 50%;
+  z-index: 10;
+}
+
+.feature-element-2-background{
+  position: absolute;
+  width: 34%;
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+.feature-element-3 {
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.feature-element-3-image {
+  position: relative;
+  padding-left: 40px;
+  width: 50%;
+  z-index: 10;
+}
+
+.feature-element-3-background{
+  position: absolute;
+  width: 34%;
+  padding-top: 30px;
+  padding-left: 680px;
+}
+
+.feature-element-4 {
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.feature-element-4-image {
+  position: relative;
+  padding-right: 70px;
+  width: 50%;
+  z-index: 10;
+}
+
+.feature-element-4-background{
+  position: absolute;
+  width: 34%;
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+  /* overview */
+
+  .overview {
+    background-color: #ffe35f;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .overview-title {
+    font-family: 'CorpoFontB';
+    font-size: 80px;
+    padding: 50px 0;
+  }
+
+  .overview-element {
+    text-align: left;
+    font-size: 37px;
+    padding-bottom: 9px;
+    margin-bottom: 45px;
+    border-bottom: solid 2px #535353;;
+  }
+  
+  span {
+    display: inline-block;
+    width: 10em;
+  }
+
+  /* タイムスケジュール */
+  .time-schedule-container {
+    text-align: center;
+  }
+
+  .time-schedule-img {
+    padding-top: 100px;
+    width: 100%;
+  }
+
+  .operation-title {
+    font-size: 32px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .operation-img {
+    height: 140px;
+    width: 75%;
+    object-fit: cover;
+  }
+
+  .operation-detail {
+    font-size: 32px;
+    text-align: left;
+    padding-top: 30px;
+  }
+
+  /* スポンサー */
+  .sponser-container {
+    text-align: center;
+  }
+
+  .sponser-title {
+    font-family: 'CorpoFontB';
+    font-size: 80px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .sponser-gold-title {
+    font-family: 'CorpoFontB';
+    font-size: 80px;
+    padding-bottom: 50px;
+  }
+
+  .sponser-gold-element {
+    display: flex;
+    width: 100%;
+  }
+
+  .sponser-gold-img {
+    width: 65%;
+  }
+
+  .sponser-gold-exp {
+    padding-left: 40px;
+  }
+
+  .sponser-silver-title {
+    font-family: 'CorpoFontB';
+    font-size: 80px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  .sponsre-silver-element {
+    display: flex;
+    width: 100%;
+  }
+
+  .sponser-silver-img {
+    width: 30%;
+    padding: 5px 10px;
+  }
+
+  .sponser-bronze-title {
+    font-family: 'CorpoFontB';
+    font-size: 80px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  .sponsre-bronze-element {
+    display: flex;
+    width: 100%;
+  }
+
+  .sponser-bronze-img {
+    width: 23%;
+    padding: 5px 10px;
+  }
+
+  .sponser-media-title {
+    font-family: 'CorpoFontB';
+    font-size: 80px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  .sponsre-media-element {
+    display: flex;
+    width: 100%;
+  }
+
+  .sponser-media-img {
+    width: 23%;
+    padding: 5px 10px;
+  }
+
+  .sponser-cooperation-title {
+    font-family: 'CorpoFontB';
+    font-size: 80px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  .sponsre-cooperation-element {
+    display: flex;
+    width: 100%;
+  }
+
+  .sponser-cooperation-img {
+    width: 23%;
+    padding: 5px 10px;
+  }
+
+  /* お申込み */
+  .application-container {
+    text-align: center;
+    padding-bottom: 250px;
+  }
+
+  .application-title {
+    font-family: 'CorpoFontB';
+    font-size: 80px;
+    padding-top: 250px;
+    padding-bottom: 70px;
+  }
+
+  .application-img {
+    width: 80%;
+  }
