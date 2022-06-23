@@ -17,9 +17,16 @@ li {
   margin: 0 auto;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&subset=japanese');
+
+
 @font-face {
 	font-family: 'CorpoFontB';
 	src: url(./fonts/Corporate-Logo-Bold-ver2.ttf) format('truetype');
+}
+
+p {
+  font-family: "ヒラギノ角ゴ ProN", "Noto Sans JP", sans-serif;
 }
 
 
@@ -27,7 +34,7 @@ li {
 header {
   background-color: #ffe35f;
   color: black;
-  height: 64px;
+  height: 70px;
   width: 100%;
   position :fixed;
   top: 0;
@@ -37,7 +44,11 @@ header {
 .header-logo {
   display: inline-block;
   padding-left: 30px;
-  padding-top: 10px;
+  padding-top: 15px;
+}
+
+.header-logo-img {
+  width: 200px;
 }
 
 .header-right {
@@ -45,14 +56,16 @@ header {
 }
 
 .header-right a {
+  font-family: 'CorpoFontB';
   height: 64px;
   line-height: 65px;
-  font-size: 23px;
-  padding: 3px 25px 0px 25px;
+  font-size: 20px;
+  padding: 3px 13px 0px 13px;
   color: rgb(39, 39, 39);
   display: block;
   float: left;
   transition: all 0.5s;
+  text-decoration: none;
 }
 
 .header-right a:hover {
@@ -61,10 +74,70 @@ header {
 
 .header-down-line {
   position: fixed;
-  height: 74px;
+  height: 80px;
   width: 100%;
   background-color: black;
   z-index: 99;
+}
+
+.separate2-space {
+  display: flex;
+  width: 100%;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn{
+	position:fixed;
+  background-color: #ffd000;
+  z-index: 9999;/*ボタンを最前面に*/
+	top:11px;
+	right: 20px;
+	cursor: pointer;
+  width: 50px;
+  height:50px;
+  display: none;
+}
+	
+/*×に変化*/	
+.openbtn span{
+  display: inline-block;
+  transition: all .4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+	background-color: 	rgb(255, 255, 255);
+  width: 45%;
+}
+
+.openbtn span:nth-of-type(1) {
+	top:15px;	
+}
+
+.openbtn span:nth-of-type(2) {
+	top:23px;
+}
+
+.openbtn span:nth-of-type(3) {
+	top:31px;
+}
+
+.openbtn.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+	opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
 }
 
 /* メイン */
@@ -79,7 +152,7 @@ header {
     position: absolute;
     top: -35px;
     width: 100%;
-    height: 100%;
+    height: 88%;
     object-position: 100% 100%;
     z-index: -10;
   }
@@ -89,6 +162,7 @@ header {
     top: -30px;
     left: 100px;
     width: 90%;
+    z-index: -5;
   }
 
   .top-img-03 {
@@ -117,7 +191,7 @@ header {
 
   .top-img-06 {
     position: absolute;
-    top: 44%;
+    top: 43%;
     left: 32%;
     width: 10%;
     z-index: 59;
@@ -125,7 +199,7 @@ header {
 
   .top-img-07 {
     position: absolute;
-    top: 45%;
+    top: 44%;
     left: 33%;
     width: 10%;
     z-index: 50;
@@ -133,7 +207,7 @@ header {
 
   .top-img-08 {
     position: absolute;
-    top: 43%;
+    top: 42%;
     left: 31%;
     width: 10%;
     z-index: 40;
@@ -141,7 +215,7 @@ header {
 
   .top-img-09 {
     position: absolute;
-    top: 30%;
+    top: 26%;
     left: 40%;
     width: 50%;
     z-index: 60;
@@ -149,7 +223,7 @@ header {
 
   .top-img-10 {
     position: absolute;
-    top: 32%;
+    top: 28%;
     left: 41%;
     width: 50%;
     z-index: 50;
@@ -157,34 +231,65 @@ header {
 
   .top-img-11 {
     position: absolute;
-    top: 27.5%;
+    top: 23.5%;
     left: 39%;
     width: 50%;
     z-index: 40;
   }
 
+
   .separate2-img {
-    position: absolute;
-    top: 66%;
     width: 100%;
   }
 
   .separate2 {
-    padding-top: 50%;
+    padding-top: 40%;
     width: 100%;
+    font-size: 0
   }
 
   .separate2-space {
     background-color: #ffe35f;
+    position: relative;
+    flex-wrap: wrap;
     width: 100%;
     height: 150px;
+    text-align: center;
   }
 
-  .first_kyouryoku {
+  .first-cooperation {
+    width:18%;
+    padding: 0 1%;
+    z-index: 50;
+    align-self: flex-start;
     position: absolute;
-    top: 85%;
-    left: 15%;
-    width: 78%;
+  }
+
+  .imamirai {
+    top: 50px;
+    padding-left: 4%;
+  }
+
+  .highschool {
+    top: 14px;
+    height: 80%;
+    object-fit: cover;
+    left: 22%;
+  }
+
+  .selfwing {
+    left: 40%;
+  }
+
+  .youthcareer {
+    top: 15%;
+    left: 60%;
+  }
+
+  .kantele {
+    width: 10%;
+    top: 0;
+    left: 81%;
   }
 
 /* アントレクレストの概要 */
@@ -197,11 +302,10 @@ header {
 
 .exp-catch-copy {
   width: 90%;
-  padding-left: 50px;
+  padding-left: 5%;
 }
 
 .exp {
-  font-family: 'HiraKakuProN-W6';
   font-size: 35px;
   padding-top: 50px;
 }
@@ -250,8 +354,8 @@ header {
 
 .exp2-detail-left {
   width: 50%;
-  margin-left: 300px;
-  padding: 0 100px;
+  margin-left: 10%;
+  padding: 0 5%;
 }
 
 .exp2-detail-left-up {
@@ -264,8 +368,8 @@ header {
 
 .exp2-detail-right {
   width: 50%;
-  margin-right: 300px;
-  padding: 0 100px;
+  margin-right: 10%;
+  padding: 0 5%;
 }
 
 .exp2-detail-right-up {
@@ -285,8 +389,8 @@ header {
 .feature-title {
   font-family: 'CorpoFontB';
   font-size: 72px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .feature-element-title {
@@ -299,23 +403,38 @@ header {
   font-size: 28px;
 }
 
+.feature-mobile-tablet-ver {
+  display: none;
+}
+
 .feature-element-1 {
   display: flex;
   padding-bottom: 100px;
 }
 
-.feature-element-1-image {
-  position: relative;
-  padding-left: 40px;
+.feature-element-1-explanation {
   width: 50%;
+}
+
+.feature-element-1-img-div {
+  position: relative;
+  width: 50%;
+}
+
+.feature-element-1-image {
+  padding-left: 40px;
+  width: 100%;
   z-index: 10;
+  align-self: flex-start;
 }
 
 .feature-element-1-background{
   position: absolute;
-  width: 34%;
-  padding-top: 30px;
-  padding-left: 680px;
+  width: 100%;
+  padding-left: 40px;
+  top: 25px;
+  left: 20px;
+  z-index: -10;
 }
 
 .feature-element-2 {
@@ -323,18 +442,30 @@ header {
   padding-bottom: 100px;
 }
 
-.feature-element-2-image {
-  position: relative;
-  padding-right: 70px;
+.feature-element-2-explanation {
   width: 50%;
+  padding-left: 70px;
+}
+
+.feature-element-2-img-div {
+  position: relative;
+  width: 50%;
+}
+
+.feature-element-2-image {
+  padding-right: 70px;
+  width: 100%;
   z-index: 10;
+  align-self: flex-start;
 }
 
 .feature-element-2-background{
   position: absolute;
-  width: 34%;
-  padding-top: 30px;
-  padding-left: 40px;
+  width: 100%;
+  padding-right: 70px;
+  top: 25px;
+  left: 20px;
+  z-index: -10;
 }
 
 .feature-element-3 {
@@ -342,18 +473,29 @@ header {
   padding-bottom: 100px;
 }
 
-.feature-element-3-image {
-  position: relative;
-  padding-left: 40px;
+.feature-element-3-explanation {
   width: 50%;
+}
+
+.feature-element-3-img-div {
+  position: relative;
+  width: 50%;
+}
+
+.feature-element-3-image {
+  padding-left: 40px;
+  width: 100%;
   z-index: 10;
+  align-self: flex-start;
 }
 
 .feature-element-3-background{
   position: absolute;
-  width: 34%;
-  padding-top: 30px;
-  padding-left: 680px;
+  width: 100%;
+  padding-left: 40px;
+  top: 25px;
+  left: 20px;
+  z-index: -10;
 }
 
 .feature-element-4 {
@@ -361,18 +503,40 @@ header {
   padding-bottom: 100px;
 }
 
-.feature-element-4-image {
-  position: relative;
-  padding-right: 70px;
+.feature-element-4-explanation {
   width: 50%;
+  padding-left: 70px;
+}
+
+.feature-element-4-img-div {
+  position: relative;
+  width: 50%;
+}
+
+.feature-element-4-image {
+  padding-right: 70px;
+  width: 100%;
   z-index: 10;
+  align-self: flex-start;
 }
 
 .feature-element-4-background{
   position: absolute;
-  width: 34%;
-  padding-top: 30px;
-  padding-left: 40px;
+  width: 100%;
+  padding-right: 70px;
+  top: 25px;
+  left: 20px;
+  z-index: -10;
+}
+
+.exp2-bottom-2 {
+  width: 100%;
+  height: 20px;
+}
+
+.feature-bottom {
+  width: 100%;
+  height: 40px;
 }
 
   /* overview */
@@ -386,7 +550,7 @@ header {
   .overview-title {
     font-family: 'CorpoFontB';
     font-size: 80px;
-    padding: 50px 0;
+    padding: 70px 0;
   }
 
   .overview-element {
@@ -394,12 +558,13 @@ header {
     font-size: 37px;
     padding-bottom: 9px;
     margin-bottom: 45px;
-    border-bottom: solid 2px #535353;;
+    border-bottom: solid 2px #535353;
+    width: 100%;
   }
-  
-  span {
-    display: inline-block;
-    width: 10em;
+
+  .overview-bottom {
+    width: 100%;
+    height: 10px;
   }
 
   /* タイムスケジュール */
@@ -430,6 +595,11 @@ header {
     padding-top: 30px;
   }
 
+  .operation-bottom {
+    width: 100%;
+    height: 50px;
+  }
+
   /* スポンサー */
   .sponser-container {
     text-align: center;
@@ -455,6 +625,7 @@ header {
 
   .sponser-gold-img {
     width: 65%;
+    align-self: flex-start;
   }
 
   .sponser-gold-exp {
@@ -543,5 +714,240 @@ header {
   }
 
   .application-img {
-    width: 80%;
+    width: 55%;
   }
+
+footer {
+  background-color: #ffe35f;
+  display: flex;
+  padding-bottom: 6%;
+}
+
+.footer-left {
+  width: 50%;
+}
+
+.footer-left-inquiry {
+  padding-top: 7%;
+  padding-left: 7%;
+}
+
+.footer-left-inquiry-title {
+  font-size: 40px;
+}
+
+.footer-left-secretariat {
+  padding-top: 7%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.footer-left-secretariat-title {
+  font-size: 32px;
+}
+
+.footer-left-secretariat-detail {
+  font-size: 32px;
+}
+
+.footer-right {
+  width: 50%;
+  padding-top: 10%;
+  padding-right: 2%;
+}
+
+.footer-right-sponsor {
+  padding-top: 3%;
+}
+
+.footer-right-sponsor-contents {
+  font-size: 32px;
+}
+
+.footer-right-support {
+  padding-top: 5%;
+}
+
+.footer-right-support-contents {
+  font-size: 32px;
+}
+
+.footer-right-cooperation {
+  padding-top: 5%;
+}
+
+.footer-right-cooperation-contents {
+  font-size: 32px;
+}
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav{
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position:fixed;
+  z-index: 999;
+  /*ナビのスタート位置と形状*/
+  top:0;
+  right: -120%;
+  width:100%;
+  height: 100vh;/*ナビの高さ*/
+  background:#ffd000;
+  /*動き*/
+  transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+  right: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  z-index: 999; 
+  width: 100%;
+  height: 100vh;/*表示する高さ*/
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li{
+  list-style: none;
+  text-align: center;
+}
+
+#g-nav li a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding:10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+/* コンタクトフォーム */
+.contact-form {
+  max-width: 1000px;
+  width: 80%;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.contact-table {
+  width: 100%;
+  border-bottom: solid 2px #535353;
+  padding-top: 20px;
+  padding-bottom: 3px;
+}
+
+.contact-table th{
+  text-align: left;
+  width: 20%;
+  font-size: 28px;
+}
+
+.contact-table td{
+  text-align: right;
+}
+
+input {
+  width: 80%;
+  padding: 5px 5px;
+  font-size: 20px;
+  font-family: "ヒラギノ角ゴ ProN", "Noto Sans JP", sans-serif;
+}
+
+.contact-table-year td{
+  text-align: left;
+  padding-left: 18%;
+}
+
+.contact-table-year input{
+  width: 15px;
+}
+
+.contact-year-txt {
+  padding-right: 15%;
+  font-size: 20px;
+  font-family: "ヒラギノ角ゴ ProN", "Noto Sans JP", sans-serif;
+}
+
+.contact-trigger {
+  width: 100%;
+}
+
+.contact-trigger-title {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-trigger-title-txt {
+  font-size: 28px;
+  font-family: 'CorpoFontB';
+  padding-top: 10px;
+}
+
+.contact-trigger-div {
+  width: 32%;
+  display: inline-block;
+}
+
+.contact-trigger-element input {
+  width: 15px;
+}
+
+.contact-trigger-txt {
+  font-size: 20px;
+  font-family: "ヒラギノ角ゴ ProN", "Noto Sans JP", sans-serif;
+}
+
+.contact-reason-title {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.contact-reason-title-txt {
+  font-size: 28px;
+  font-family: 'CorpoFontB';
+}
+
+.contact-reason-textarea {
+  width: 99%;
+  height: 20vh;
+  font-size: 20px;
+  padding: 10px;
+  font-family: "ヒラギノ角ゴ ProN", "Noto Sans JP", sans-serif;
+}
+
+.contact-reason-note {
+  text-align: center;
+  font-size: 20px;
+}
+
+.submit {
+  text-align: center;
+}
+
+.submit-img {
+  width: 30%;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}

@@ -1,0 +1,587 @@
+@media all and (max-width: 1024px) {
+  /* ヘッダー */
+  .openbtn {
+    display: block;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  /* トップ */
+  .top-container {
+    position: relative;
+    height: 100vh;
+  }
+
+  .top-img-01 {
+    position: absolute;
+    top: -35px;
+    width: 100%;
+    height: 100%;
+    object-position: 100% 100%;
+    z-index: -10;
+    object-fit: cover;
+    object-position: 70% 0%;
+  }
+
+  .top-img-02 {
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    width: 100%;
+    height: 90%;
+    z-index: -5;
+    object-fit: cover;
+    object-position: 70% 0%;
+  }
+
+  .top-img-03 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 33%;
+    z-index: 60;
+  }
+
+  .top-img-04 {
+    position: absolute;
+    top: 31.5%;
+    left: 11%;
+    width: 33%;
+    z-index: 50;
+  }
+
+  .top-img-05 {
+    position: absolute;
+    top: 29.5%;
+    left: 8%;
+    width: 33%;
+    z-index: 40;
+  }
+
+  .top-img-06 {
+    position: absolute;
+    top: 43%;
+    left: 39%;
+    width: 10%;
+    z-index: 59;
+  }
+
+  .top-img-07 {
+    position: absolute;
+    top: 44%;
+    left: 40%;
+    width: 10%;
+    z-index: 50;
+  }
+
+  .top-img-08 {
+    position: absolute;
+    top: 42%;
+    left: 38%;
+    width: 10%;
+    z-index: 40;
+  }
+
+  .top-img-09 {
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    width: 50%;
+    z-index: 60;
+  }
+
+  .top-img-10 {
+    position: absolute;
+    top: 51%;
+    left: 43%;
+    width: 50%;
+    z-index: 50;
+  }
+
+  .top-img-11 {
+    position: absolute;
+    top: 49%;
+    left: 41%;
+    width: 50%;
+    z-index: 40;
+  }
+
+  .separate2-img {
+    width: 100%;
+  }
+
+  .separate2 {
+    padding-top: 80vh;
+    width: 100%;
+    font-size: 0;
+  }
+
+  .separate2-space {
+    background-color: #ffe35f;
+    width: 100%;
+    height: 150px;
+  }
+
+  .first-cooperation {
+    width: 27%;
+  }
+
+  .imamirai {
+    top: 5%;
+    padding-left: 10%;
+  }
+
+  .highschool {
+    top: -20%;
+    height: 80%;
+    object-fit: cover;
+    left: 38%;
+    width: 30%;
+  }
+
+  .selfwing {
+    width: 22%;
+    top: -15%;
+    left: 70%;
+  }
+
+  .youthcareer {
+    width: 33%;
+    top: 58%;
+    left: 20%;
+  }
+
+  .kantele {
+    width: 15%;
+    top: 49%;
+    left: 58%;
+  }
+
+
+  /* feature */
+
+  .feature-pc-ver {
+    display: none;
+  }
+
+  .feature-mobile-tablet-ver {
+    display: block;
+  }
+
+  
+  .feature-element-1-explanation {
+    width: 100%;
+    padding-bottom: 75px;
+  }
+  
+  .feature-element-1-img-div {
+    width: 100%;
+    margin: 20px 5% 30px 5%;
+  }
+  
+  .feature-element-1-image {
+    padding-left: 0px;
+    width: 90%;
+  }
+  
+  .feature-element-1-background{
+    width: 90%;
+    padding-left: 0px;
+    top: 15px;
+    left: 15px;
+  }
+
+  .sponser-gold-element {
+    display: block;
+    width: 100%;
+  }
+
+  .sponser-gold-img {
+    width: 80%;
+  }
+
+  .sponser-gold-exp {
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 0;
+    font-size: 30px;
+  }
+
+  .sponser-silver-img {
+    width: 40%;
+  }
+
+  .sponser-bronze-img {
+    width: 40%;
+  }
+
+  .sponser-media-img {
+    width: 40%;
+  }
+
+  .sponser-cooperation-img {
+    width: 40%;
+  }
+
+  .application-img {
+    width: 65%;
+  }
+
+  .contact-form {
+    padding-top: 150px;
+  }
+
+  .contact-table th{
+    font-size: 25px;
+  }
+
+  input {
+    font-size: 15px;
+  }
+
+  .contact-year-txt {
+    padding-right: 11%;
+    font-size: 20px;
+  }
+
+  .submit-img {
+    width: 45%;
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
+
+  .contact-reason-note {
+    font-size: 18px;
+  }
+
+}
+
+@media all and (max-width: 599px){
+  .header-logo-img {
+    width: 200px;
+  }
+
+  /* ヘッダー */
+
+  /* exp */
+    /* exp */
+    .exp-title {
+      font-family: 'CorpoFontB';
+      font-size: 30px;
+      padding-top: 105px;
+      padding-bottom: 25px;
+    }
+  
+    .exp {
+      font-size: 20px;
+    }
+
+  .time-schedule-container {
+    position: relative;
+  }
+
+  .time-schedule-img {
+    position: absolute;
+    width: 124%;
+    left: -12%;
+    padding-top: 60px;
+  }
+
+  /* トップ */
+  .top-img-03 {
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    width: 42%;
+    z-index: 60;
+  }
+
+  .top-img-04 {
+    position: absolute;
+    top: 31%;
+    left: 3%;
+    width: 42%;
+    z-index: 50;
+  }
+
+  .top-img-05 {
+    position: absolute;
+    top: 29%;
+    left: 0%;
+    width: 42%;
+    z-index: 40;
+  }
+
+  .top-img-06 {
+    position: absolute;
+    top: 43%;
+    left: 31%;
+    width: 13%;
+    z-index: 59;
+  }
+
+  .top-img-07 {
+    position: absolute;
+    top: 44%;
+    left: 33%;
+    width: 13%;
+    z-index: 50;
+  }
+
+  .top-img-08 {
+    position: absolute;
+    top: 42%;
+    left: 31%;
+    width: 13%;
+    z-index: 40;
+  }
+
+  .top-img-09 {
+    position: absolute;
+    top: 50%;
+    left: 34%;
+    width: 62%;
+    z-index: 60;
+  }
+
+  .top-img-10 {
+    position: absolute;
+    top: 51%;
+    left: 35%;
+    width: 62%;
+    z-index: 50;
+  }
+
+  .top-img-11 {
+    position: absolute;
+    top: 49%;
+    left: 33%;
+    width: 62%;
+    z-index: 40;
+  }
+
+  .imamirai {
+    top: 12%;
+    padding-left: 5%;
+  }
+
+  .highschool {
+    top: -22%;
+    height: 80%;
+    object-fit: cover;
+    left: 33%;
+    width: 38%;
+  }
+
+  .selfwing {
+    width: 25%;
+    top: 2%;
+    left: 71%;
+  }
+
+  .youthcareer {
+    width: 40%;
+    top: 57%;
+    left: 15%;
+  }
+
+  .kantele {
+    width: 20%;
+    top: 49%;
+    left: 60%;
+  }
+
+  /* フォントサイズ　*/
+
+  .operation-img {
+    width: 90%;
+  }
+
+  .exp2-title {
+    font-size: 30px;
+  }
+
+  .exp2 {
+    font-size: 20px;
+  }
+
+  .exp2-bottom {
+    font-size: 20px;
+  }
+
+  .feature-title {
+    font-size: 33px;
+  }
+
+  .feature-element-title {
+    font-size: 25px;
+  }
+
+  .feature-element-detail {
+    font-size: 20px;
+  }
+
+  .overview-title {
+    font-size: 50px;
+  }
+
+  .overview-element {
+    font-size: 20px;
+  }
+
+  span {
+    width: 9em;
+  }
+
+  .operation-title {
+    font-size: 25px;
+    padding-top: 120%;
+    padding-bottom: 0;
+  }
+
+  .operation-img {
+    width: 100%;
+  }
+
+  .operation-detail {
+    font-size: 20px;
+    padding-top: 0;
+  }
+
+  .sponser-title {
+    font-size: 50px;
+    padding-bottom: 30px;
+  }
+
+  .sponser-gold-title {
+    font-size: 50px;
+    padding-bottom: 30px;
+  }
+
+  .sponser-gold-exp {
+    font-size: 19px;
+  }
+
+  .sponser-silver-title {
+    font-size: 50px;
+    padding-top: 50px;
+  }
+
+  .sponser-bronze-title {
+    font-size: 50px;
+    padding-top: 50px;
+  }
+
+  .sponser-media-title {
+    font-size: 50px;
+    padding-top: 50px;
+  }
+
+  .sponser-cooperation-title {
+    font-size: 50px;
+    padding-top: 50px;
+  }
+
+  .application-title {
+    font-size: 50px;
+    padding-top: 150px;
+  }
+
+  .application-img {
+    width: 100%;
+  }
+
+  .footer-left-inquiry-title {
+    font-size: 20px;
+  }
+
+  .footer-left-secretariat-title {
+    font-size: 15px;
+  }
+
+  .footer-left-secretariat-detail {
+    font-size: 15px;
+  }
+
+  .footer-right-sponsor-contents {
+    font-size: 15px;
+  }
+
+  .footer-right-support-contents {
+    font-size: 15px;
+  }
+  
+  .footer-right-cooperation-contents {
+    font-size: 15px;
+  }
+
+  .exp2-detail-img {
+    width: 90%;
+  }
+
+  .exp2-detail-title {
+    font-size: 20px;
+    padding: 4px 0;
+  }
+
+  .exp2-detail-exp {
+    font-size: 13px;
+  }
+
+  .contact-table th{
+    font-size: 25px;
+  }
+
+  input {
+    font-size: 10px;
+    width: 70%;
+  }
+
+  .contact-year-txt {
+    padding-right: 55%;
+    font-size: 15px;
+  }
+
+  .submit-img {
+    width: 45%;
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
+
+  .contact-form {
+    padding-top: 100px;
+  }
+
+  .contact-table th{
+    font-size: 16px;
+    width: 26%;
+  }
+
+  .contact-trigger-txt {
+    font-size: 11px;
+    font-family: "ヒラギノ角ゴ ProN", "Noto Sans JP", sans-serif;
+  }
+
+  .contact-trigger-title-txt {
+    font-size: 20px;
+  }
+  
+  .contact-reason-title-txt {
+    font-size: 20px;
+  }
+
+  .contact-reason-textarea {
+    height: 15vh;
+    font-size: 13px;
+  }
+  
+  .contact-reason-note {
+    font-size: 13px;
+  }
+
+  .submit-img {
+    width: 60%;
+  }
+}

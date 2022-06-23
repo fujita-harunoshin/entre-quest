@@ -3,14 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>アントレクエスト</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=Kosugi+Maru&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   </head>
   <body>
@@ -18,14 +14,29 @@
       <div class="header-container">
         <div class="header-logo">
           <a href="./index.html">
-            <img src="./images/titlelogo.png" width="200">
+            <img class="header-logo-img" src="./images/titlelogo.png">
           </a>
         </div>
+        <div class="openbtn"><span></span><span></span><span></span></div>
+          <nav id="g-nav">
+            <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+              <ul>
+                <li><a href="#explanation">EXPLANATION</a></li>
+                <li><a href="#feature">FEATURE</a></li>
+                <li><a href="#overview">OVERVIEW</a></li> 
+                <li><a href="#schedule">SCHEDULE</a></li> 
+                <li><a href="#sponsor">SPONSOR</a></li> 
+                <li><a href="#contact">CONTACT</a></li> 
+              </ul>
+            </div>
+          </nav>
         <div class="header-right">
-          <a>OVERVIEW</a>
-          <a>SCHEDULE</a>
-          <a>SPONSOR</a>
-          <a>CONTACT</a>
+          <a href="#explanation">EXPLANATION</a>
+          <a href="#feature">FEATURE</a>
+          <a href="#overview">OVERVIEW</a>
+          <a href="#schedule">SCHEDULE</a>
+          <a href="#sponsor">SPONSOR</a>
+          <a href="#contact">CONTACT</a>
         </div>
       </div>
     </header>
@@ -44,9 +55,15 @@
         <img src="./images/kaikaseyo_blue.png" class="top-img-10">
         <img src="./images/kaikaseyo.png" class="top-img-11">
         <div class="separate2">
-          <img src="./images/separate2.png" class="separate2-img">
-          <div class="separate2-space"></div>
-          <img src="./images/first_kyouryoku.png" class="first_kyouryoku">
+          <img src="./images/separate2.png" class="separate2-img separate2-img-1">
+          <div class="separate2-space">
+            <img src="./images/imamirai.png" class="first-cooperation imamirai">
+            <img src="./images/highSchool.png" class="first-cooperation highschool">
+            <img src="./images/selfwing.png" class="first-cooperation selfwing">
+            <img src="./images/youthcareer.png" class="first-cooperation youthcareer">
+            <img src="./images/kantele.png" class="first-cooperation kantele">
+          </div>
+          <img src="./images/separate.png" class="separate2-img">
         </div>
       </div>
       <div class="container entreQuest-explanation">
@@ -59,7 +76,7 @@
           新たなチャレンジをしたいと思っている中学生は気軽にご参加ください。</p>
       </div>
       <div class="separate1">
-        <img src="./images/separate2.png" class="separate1-img">
+        <img src="./images/separate2.png" class="separate1-img" id="explanation">
       </div>
       <div class="explanation2">
         <p class="container exp2-title">なぜ、今起業家が必要なのか？</p>
@@ -101,76 +118,156 @@
           将来の変化を予測することが困難な時代への変化してきました。その時代で生きていくためにこれらのスキルは
           起業家だけではなく、学生や社会人にも求められています。
         </p>
-        
+        <div id="feature" class="exp2-bottom-2"></div>
       </div>
       <div class="container feature">
-        <p class="feature-title">アントレクエストの特徴</p>
-        <div class="feature-element-1">
+        <div class="feature-pc-ver">
+          <p class="feature-title">アントレクエストの特徴</p>
+          <div class="feature-element-1">
+            <div class="feature-element-1-explanation">
+              <p class="feature-element-title">ゲーム感覚で起業を疑似体験できる</p>
+              <p class="feature-element-detail">
+                RPGのゲーム感覚でできるプログラムで楽しく起業を学んでいきます。チームビルディングからアイディア構築、プレゼンテーションまで様々な内容により、コミュニケーション能力や主体性、リーダーシップ、チャレンジ精神など多くの能力を育成することができます。
+              </p>
+            </div>
+            <div class="feature-element-1-img-div">
+              <img src="./images/1.png" class="feature-element-1-image">
+              <img src="./images/photo_back1.png" class="feature-element-1-background">
+            </div>
+          </div>
+          <div class="feature-element-2">
+            <div class="feature-element-2-img-div">
+              <img src="./images/2.png" class="feature-element-2-image">
+              <img src="./images/photo_back2.png" class="feature-element-2-background">
+            </div>
+            <div class="feature-element-2-explanation">
+              <p class="feature-element-title">チームごとに優勝を競う</p>
+              <p class="feature-element-detail">
+                当日の参加者で5人1組チームを作って、社会課題を解決するアイディアを考えていきます！同世代の仲間たちと競う合う。優勝チームには賞品も
+              </p>
+            </div>
+          </div>
+          <div class="feature-element-3">
+            <div class="feature-element-3-explanation">
+              <p class="feature-element-title">アイディアがなくても参加できる</p>
+              <p class="feature-element-detail">
+                1からレクチャーもあるので、アイディアがなくても参加可能です。楽しむ気持ちと向上心さえあれば誰でも参加可能です。
+              </p>
+            </div>
+            <div class="feature-element-3-img-div">
+              <img src="./images/3.png" class="feature-element-3-image">
+              <img src="./images/photo_back1.png" class="feature-element-3-background">
+            </div>
+          </div>
+          <div class="feature-element-4">
+            <div class="feature-element-4-img-div">
+              <img src="./images/4.png" class="feature-element-4-image">
+              <img src="./images/photo_back2.png" class="feature-element-4-background">
+            </div>
+            <div class="feature-element-4-explanation">
+              <p class="feature-element-title">たくさんの人と交流ができる</p>
+              <p class="feature-element-detail">
+                参加者の中学生はもちろん、起業家や学生起業家、運営している社会人メンバーなど普段出会えない多種多様な人たちと交流することができます。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="feature-mobile-tablet-ver">
+          <p class="feature-title">アントレクエストの特徴</p>
+
           <div class="feature-element-1-explanation">
             <p class="feature-element-title">ゲーム感覚で起業を疑似体験できる</p>
+            <div class="feature-element-1-img-div">
+              <img src="./images/1.png" class="feature-element-1-image">
+              <img src="./images/photo_back1.png" class="feature-element-1-background">
+            </div>
             <p class="feature-element-detail">
               RPGのゲーム感覚でできるプログラムで楽しく起業を学んでいきます。チームビルディングからアイディア構築、プレゼンテーションまで様々な内容により、コミュニケーション能力や主体性、リーダーシップ、チャレンジ精神など多くの能力を育成することができます。
             </p>
           </div>
-          <img src="./images/1.png" class="feature-element-1-image">
-          <img src="./images/photo_back1.png" class="feature-element-1-background">
-        </div>
-        <div class="feature-element-2">
-          <img src="./images/2.png" class="feature-element-2-image">
-          <img src="./images/photo_back2.png" class="feature-element-2-background">
-          <div class="feature-element-2-explanation">
+
+          <div class="feature-element-1-explanation">
             <p class="feature-element-title">チームごとに優勝を競う</p>
+            <div class="feature-element-1-img-div">
+              <img src="./images/2.png" class="feature-element-1-image">
+              <img src="./images/photo_back2.png" class="feature-element-1-background">
+            </div>
             <p class="feature-element-detail">
               当日の参加者で5人1組チームを作って、社会課題を解決するアイディアを考えていきます！同世代の仲間たちと競う合う。優勝チームには賞品も
             </p>
           </div>
-        </div>
-        <div class="feature-element-3">
-          <div class="feature-element-3-explanation">
+
+          <div class="feature-element-1-explanation">
             <p class="feature-element-title">アイディアがなくても参加できる</p>
+            <div class="feature-element-1-img-div">
+              <img src="./images/3.png" class="feature-element-1-image">
+              <img src="./images/photo_back1.png" class="feature-element-1-background">
+            </div>
             <p class="feature-element-detail">
               1からレクチャーもあるので、アイディアがなくても参加可能です。楽しむ気持ちと向上心さえあれば誰でも参加可能です。
             </p>
           </div>
-          <img src="./images/3.png" class="feature-element-3-image">
-          <img src="./images/photo_back1.png" class="feature-element-3-background">
-        </div>
-        <div class="feature-element-4">
-          <img src="./images/4.png" class="feature-element-4-image">
-          <img src="./images/photo_back2.png" class="feature-element-4-background">
-          <div class="feature-element-4-explanation">
+
+          <div class="feature-element-1-explanation">
             <p class="feature-element-title">たくさんの人と交流ができる</p>
+            <div class="feature-element-1-img-div">
+              <img src="./images/4.png" class="feature-element-1-image">
+              <img src="./images/photo_back2.png" class="feature-element-1-background">
+            </div>
             <p class="feature-element-detail">
               参加者の中学生はもちろん、起業家や学生起業家、運営している社会人メンバーなど普段出会えない多種多様な人たちと交流することができます。
             </p>
           </div>
         </div>
+        <div class="feature-bottom" id="overview"></div>
       </div>
       <div class="overview">
         <div class="container overview-container">
           <p class="overview-title">OVERVIEW</p>
-          <p class="overview-element">
-            <span>イベント名</span>中学生がチャレンジする機会を！「アントレクエスト」
-          </p>
-          <p class="overview-element">
-            <span>日時</span>８月４日（木）　１０時～１８時
-          </p>
-          <p class="overview-element">
-            <span>場所</span>カンテレホールなんでもアリーナ
-          </p>
-          <p class="overview-element">
-            <span>運営</span>株式会社Armory
-          </p>
-          <p class="overview-element">
-            <span>参加費</span>２,０００円（教材費）
-          </p>
-          <p class="overview-element">
-            <span>来場予定数</span>３０名
-          </p>
-          <p class="overview-element">
-            <span>想定する参加者</span>関西在住の起業に関心を持った中学生
-          </p>
+          <table class="overview-element">
+            <tr>
+              <td width="23%">イベント名</td>
+              <td>中学生がチャレンジする機会を！「アントレクエスト」</td>
+            </tr>
+          </table>
+          <table class="overview-element">
+            <tr>
+              <td width="23%">日時</td>
+              <td>８月４日（木）　１０時～１８時</td>
+            </tr>
+          </table>
+          <table class="overview-element">
+            <tr>
+              <td width="23%">場所</td>
+              <td>カンテレホールなんでもアリーナ</td>
+            </tr>
+          </table>
+          <table class="overview-element">
+            <tr>
+              <td width="23%">運営</td>
+              <td>株式会社Armory</td>
+            </tr>
+          </table>
+          <table class="overview-element">
+            <tr>
+              <td width="23%">参加費</td>
+              <td>２,０００円（教材費）</td>
+            </tr>
+          </table>
+          <table class="overview-element">
+            <tr>
+              <td width="23%">来場予定数</td>
+              <td>３０名</td>
+            </tr>
+          </table>
+          <table class="overview-element">
+            <tr>
+              <td width="23%">想定する参加者</td>
+              <td>関西在住の起業に関心を持った中学生</td>
+            </tr>
+          </table>
         </div>
+        <div class="overview-bottom" id="schedule"></div>
       </div>
       <div class="time-schedule">
         <div class="container time-schedule-container">
@@ -180,6 +277,7 @@
           <p class="operation-detail">民間企業の株式会社Armory（アーマリー）と代々木高等学校が提携して設立されたアントレプレナーシップ（起業家）教育を軸にした授業をする学校。早期から夢や目標を考え、チャレンジしていくことで、自ら自分のキャリアを切り拓いていける高校生を増やすことミッションに活動している。</p>
         </div>
       </div>
+      <div class="operation-bottom" id="sponsor"></div>
       <div class="sponser">
         <div class="container sponser-container">
           <p class="sponser-title">SPONSOR</p>
@@ -240,17 +338,43 @@
           </div>
         </div>
       </div>
-      <div class="application">
+      <div id="contact" class="application">
         <div class="container application-container">
           <p class="application-title">お申込み</p>
-          <a>
+          <a href="./contact.html">
             <img src="./images/form.png" class="application-img">
           </a>
         </div>
       </div>
     </main>
     <footer>
-      <div
+      <div class="footer-left">
+        <div class="footer-left-inquiry">
+          <p class="footer-left-inquiry-title">♦お問い合わせ</p>
+        </div>
+        <div class="footer-left-secretariat">
+          <p class="footer-left-secretariat-title">運営事務局</p>
+          <p class="footer-left-secretariat-detail">
+            情報情報情報情報情報情報情報情報情報情報情報情報
+            情報情報情報情報情報情報情報情報情報情報情報情報
+            情報情報情報情報情報情報情報情報情報情報情報情報
+            情報情報情報情報情報情報情報情報情報情報情報情報
+            情報情報情報情報情報情報情報情報情報情報情報情報
+          </p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-right-sponsor">
+          <p class="footer-right-sponsor-contents">主催　　　情報情報情報情報情報情報情報情報情報情報情報情報</p>
+        </div>
+        <div class="footer-right-support">
+          <p class="footer-right-support-contents">後援　　　情報情報情報情報情報情報情報情報情報情報情報情報</p>
+        </div>
+        <div class="footer-right-cooperation">
+          <p class="footer-right-cooperation-contents">協力　　　情報情報情報情報情報情報情報情報情報情報情報情報</p>
+        </div>
+      </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
