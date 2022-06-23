@@ -649,6 +649,10 @@ header {
     padding: 5px 10px;
   }
 
+  .sponser-silver-img-1 {
+    padding-bottom: 5%;
+  }
+
   .sponser-bronze-title {
     font-family: 'CorpoFontB';
     font-size: 80px;
@@ -664,6 +668,10 @@ header {
   .sponser-bronze-img {
     width: 23%;
     padding: 5px 10px;
+  }
+
+  .sponser-bronze-img-1 {
+    padding-bottom: 4%;
   }
 
   .sponser-media-title {
@@ -683,6 +691,10 @@ header {
     padding: 5px 10px;
   }
 
+  .sponser-media-img-1 {
+    padding-bottom: 5%;
+  }
+
   .sponser-cooperation-title {
     font-family: 'CorpoFontB';
     font-size: 80px;
@@ -698,6 +710,18 @@ header {
   .sponser-cooperation-img {
     width: 23%;
     padding: 5px 10px;
+  }
+
+  .sponser-cooperation-img-1 {
+    padding-bottom: 6%;
+  }
+
+  .sponser-cooperation-img-3 {
+    padding-bottom: 4%;
+  }
+
+  .sponser-cooperation-img-4 {
+    padding-bottom: 6%;
   }
 
   /* お申込み */

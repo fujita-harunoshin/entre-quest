@@ -193,6 +193,10 @@
     left: 15px;
   }
 
+  .operation-img {
+    width: 100%;
+  }
+
   .sponser-gold-element {
     display: block;
     width: 100%;
@@ -213,16 +217,33 @@
     width: 40%;
   }
 
+  .sponser-silver-img-1 {
+    padding-bottom: 8%;
+  }
+
   .sponser-bronze-img {
     width: 40%;
+  }
+
+  .sponser-bronze-img-1 {
+    padding-bottom: 7%;
   }
 
   .sponser-media-img {
     width: 40%;
   }
 
+  .sponser-media-img-1 {
+    padding-bottom: 11%;
+  }
+
+
   .sponser-cooperation-img {
     width: 40%;
+  }
+
+  .sponser-cooperation-img-1 {
+    padding-bottom: 11%;
   }
 
   .application-img {
@@ -396,7 +417,7 @@
   /* フォントサイズ　*/
 
   .operation-img {
-    width: 90%;
+    width: 100%;
   }
 
   .exp2-title {
