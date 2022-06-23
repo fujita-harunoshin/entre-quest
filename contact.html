@@ -22,12 +22,12 @@
     <div class="header-down-line"></div>
     <main>
       <div class="contact-form">
-        <form action="">
+        <form id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfQltssc3PaEXRf1Us_DnrXUSc6Qj9cl76RTIXdFfdEtK0Xzg/formResponse" method="post">
           <table class="contact-table contact-table-1">
             <tr class="contact-contents">
               <th class="contact-item">名前</th>
               <td class="contact-body">
-                <input type="text" name="名前" class="form-text" />
+                <input type="text" name="entry.1522423120" class="form-text" required/>
               </td>
             </tr>
           </table>
@@ -35,7 +35,7 @@
             <tr>
               <th class="contact-item">ふりがな</th>
               <td class="contact-body">
-                <input type="text" name="ふりがな" class="form-text" />
+                <input type="text" name="entry.699702215" class="form-text" required/>
               </td>
             </tr>
           </table>
@@ -43,7 +43,7 @@
             <tr>
               <th class="contact-item">所属中学校</th>
               <td class="contact-body">
-                <input type="text" name="所属" class="form-text" />
+                <input type="text" name="entry.164688614" class="form-text" required/>
               </td>
             </tr>
           </table>
@@ -52,15 +52,15 @@
               <th class="contact-item">学年</th>
               <td class="contact-body">
                 <label class="contact-year">
-                  <input type="radio" name="学年" />
+                  <input type="radio" name="entry.1189182481" required value="1年生" />
                   <span class="contact-year-txt">１年生</span>
                 </label>
                 <label class="contact-year">
-                  <input type="radio" name="学年" />
+                  <input type="radio" name="entry.1189182481" required value="2年生" />
                   <span class="contact-year-txt">２年生</span>
                 </label>
                 <label class="contact-year">
-                  <input type="radio" name="学年" />
+                  <input type="radio" name="entry.1189182481" required value="3年生" />
                   <span class="contact-year-txt">３年生</span>
                 </label>
               </td>
@@ -74,55 +74,55 @@
             </div>
             <div class="contact-trigger-div">
               <label class="contact-trigger-element" >
-                <input type="checkbox" name="きっかけ" />
+                <input type="checkbox" name="entry.189298105" value="家族からの紹介" />
                 <span class="contact-trigger-txt">家族からの紹介</span>
               </label>
             </div>
             <div class="contact-trigger-div">
               <label class="contact-trigger-element" >
-                <input type="checkbox" name="きっかけ" />
+                <input type="checkbox" name="entry.189298105" value="学校からの紹介" />
                 <span class="contact-trigger-txt">学校からの紹介</span>
               </label>
             </div>
             <div class="contact-trigger-div">
               <label class="contact-trigger-element" >
-                <input type="checkbox" name="きっかけ" />
+                <input type="checkbox" name="entry.189298105" value="友達からの紹介" />
                 <span class="contact-trigger-txt">友達からの紹介</span>
               </label>
             </div>
             <div class="contact-trigger-div">
               <label class="contact-trigger-element" >
-                <input type="checkbox" name="きっかけ" />
+                <input type="checkbox" name="entry.189298105" value="Google検索" />
                 <span class="contact-trigger-txt">Google検索</span>
               </label>
             </div>
             <div class="contact-trigger-div">
               <label class="contact-trigger-element" >
-                <input type="checkbox" name="きっかけ" />
+                <input type="checkbox" name="entry.189298105" value="Twitter" />
                 <span class="contact-trigger-txt">Twitter</span>
               </label>
             </div>
             <div class="contact-trigger-div">
               <label class="contact-trigger-element" >
-                <input type="checkbox" name="きっかけ" />
+                <input type="checkbox" name="entry.189298105" value="Facebook" />
                 <span class="contact-trigger-txt">Facebook</span>
               </label>
             </div>
             <div class="contact-trigger-div">
               <label class="contact-trigger-element" >
-                <input type="checkbox" name="きっかけ" />
+                <input type="checkbox" name="entry.189298105" value="Instagram" />
                 <span class="contact-trigger-txt">Instagram</span>
               </label>
             </div>
             <div class="contact-trigger-div">
               <label class="contact-trigger-element" >
-                <input type="checkbox" name="きっかけ" />
+                <input type="checkbox" name="entry.189298105" value="チラシをみて" />
                 <span class="contact-trigger-txt">チラシをみて</span>
               </label>
             </div>
             <div class="contact-trigger-div">
               <label class="contact-trigger-element" >
-                <input type="checkbox" name="きっかけ" />
+                <input type="checkbox" name="entry.189298105" value="その他" />
                 <span class="contact-trigger-txt">その他</span>
               </label>
             </div>
@@ -133,16 +133,20 @@
                 参加したい理由
               </p>
             </div>
-            <textarea name="参加理由" class="contact-reason-textarea"></textarea>
+            <textarea name="entry.1138327935" class="contact-reason-textarea" required></textarea>
             <p class="contact-reason-note">
               ※定員オーバーをした場合はこの内容をもとに判断する場合がございます
             </p>
           </div>
           <div class="submit">
-            <input class="submit-img" type="image" src="./images/send.png" alt="送信する">
+            <input class="submit-btn" type="image" src="./images/send.png" alt="送信する" >
           </div>
         </form>
+        <p class="end-message">お問い合わせありがとうございました</p>
+        <p class="false-message">送信失敗です</p>
       </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
     </body>
 </html>

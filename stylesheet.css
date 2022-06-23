@@ -838,7 +838,7 @@ footer {
   letter-spacing: 0.1em;
   font-weight: bold;
   font-size: 25px;
-　font-family: 'CorpoFontB';
+  font-family: 'CorpoFontB';
 }
 
 
@@ -947,8 +947,22 @@ input {
   text-align: center;
 }
 
-.submit-img {
+.submit-btn {
   width: 30%;
   padding-top: 30px;
   padding-bottom: 70px;
+}
+
+.end-message {
+  display: none;
+  padding: 50px 0px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.false-message {
+  display: none;
+  padding: 50px 0px;
+  text-align: center;
+  font-size: 30px;
 }
