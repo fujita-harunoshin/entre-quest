@@ -129,7 +129,8 @@
   }
 
   .imamirai {
-    top: 5%;
+    top: 65%;
+    left: 48%;
     padding-left: 10%;
   }
 
@@ -137,27 +138,22 @@
     top: -20%;
     height: 80%;
     object-fit: cover;
-    left: 38%;
+    left: 19%;
     width: 30%;
   }
 
   .selfwing {
     width: 22%;
-    top: -15%;
-    left: 70%;
+    top: -10%;
+    left: 59%;
   }
 
   .youthcareer {
     width: 33%;
     top: 58%;
-    left: 20%;
+    left: 17%;
   }
 
-  .kantele {
-    width: 15%;
-    top: 49%;
-    left: 58%;
-  }
 
 
   /* feature */
@@ -277,6 +273,67 @@
     font-size: 18px;
   }
 
+  .footer-title {
+    font-size: 30px;
+    padding-bottom: 1.5%;
+  }
+
+  .footer-table {
+    font-family: "ヒラギノ角ゴ ProN", "Noto Sans JP", sans-serif;
+    font-size: 20px;
+  }
+
+  .footer-table-left {
+    vertical-align: top;
+    width: 50%;
+  }
+
+  .footer-table-center {
+    width: 8%;
+  }
+
+
+
+
+  .coming-soon-gold {
+    display: inline-block;
+    font-size: 35px;
+    width: 40%;
+    vertical-align: top;
+    padding: 50px 30%;
+  }
+
+  .coming-soon-silver {
+    display: inline-block;
+    font-size: 24px;
+    vertical-align: top;
+    padding: 38px 10px;
+  }
+
+  .coming-soon-bronze {
+    display: inline-block;
+    font-size: 24px;
+    width: 23%;
+    vertical-align: top;
+    padding: 38px 10px;
+  }
+
+  .coming-soon-media {
+    display: inline-block;
+    font-size: 24px;
+    width: 23%;
+    vertical-align: top;
+    padding: 50px 10px;
+  }
+
+  .coming-soon-Sponsorship {
+    display: inline-block;
+    font-size: 24px;
+    width: 23%;
+    vertical-align: top;
+    padding: 50px 10px;
+  }
+
 }
 
 @media all and (max-width: 599px){
@@ -384,28 +441,29 @@
   }
 
   .imamirai {
-    top: 12%;
+    top: 66%;
+    left: 52%;
     padding-left: 5%;
   }
 
   .highschool {
-    top: -22%;
+    top: -11%;
     height: 80%;
     object-fit: cover;
-    left: 33%;
+    left: 10%;
     width: 38%;
   }
 
   .selfwing {
     width: 25%;
-    top: 2%;
-    left: 71%;
+    top: 10%;
+    left: 58%;
   }
 
   .youthcareer {
     width: 40%;
     top: 57%;
-    left: 15%;
+    left: 9%;
   }
 
   .kantele {
@@ -493,6 +551,11 @@
   }
 
   .sponser-media-title {
+    font-size: 50px;
+    padding-top: 50px;
+  }
+
+  .sponser-Sponsorship-title {
     font-size: 50px;
     padding-top: 50px;
   }
@@ -615,5 +678,65 @@
     padding: 50px 0px;
     text-align: center;
     font-size: 18px;
+  }
+
+  .footer-title {
+    font-size: 20px;
+    padding-bottom: 1.5%;
+  }
+
+  .footer-table {
+    font-family: "ヒラギノ角ゴ ProN", "Noto Sans JP", sans-serif;
+    font-size: 15px;
+  }
+
+  .footer-table-left {
+    vertical-align: top;
+    width: 50%;
+  }
+
+  .footer-table-center {
+    width: 10%;
+  }
+
+
+
+  .coming-soon-gold {
+    display: inline-block;
+    font-size: 24px;
+    width: 30%;
+    vertical-align: top;
+    padding: 50px 35%;
+  }
+
+  .coming-soon-silver {
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: top;
+    padding: 20px 10px;
+  }
+
+  .coming-soon-bronze {
+    display: inline-block;
+    font-size: 18px;
+    width: 23%;
+    vertical-align: top;
+    padding: 20px 10px;
+  }
+
+  .coming-soon-media {
+    display: inline-block;
+    font-size: 18px;
+    width: 23%;
+    vertical-align: top;
+    padding: 20px 10px;
+  }
+
+  .coming-soon-Sponsorship {
+    display: inline-block;
+    font-size: 18px;
+    width: 23%;
+    vertical-align: top;
+    padding: 20px 10px;
   }
 }

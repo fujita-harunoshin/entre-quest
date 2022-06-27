@@ -267,23 +267,24 @@ header {
 
   .imamirai {
     top: 50px;
-    padding-left: 4%;
+    padding-left: 72%;
   }
 
   .highschool {
-    top: 14px;
+    top: 25%;
     height: 80%;
     object-fit: cover;
-    left: 22%;
+    left: 8%;
   }
 
   .selfwing {
-    left: 40%;
+    top: 10px;
+    left: 28%;
   }
 
   .youthcareer {
-    top: 15%;
-    left: 60%;
+    top: 30%;
+    left: 50%;
   }
 
   .kantele {
@@ -560,6 +561,7 @@ header {
     margin-bottom: 45px;
     border-bottom: solid 2px #535353;
     width: 100%;
+    font-family: "ヒラギノ角ゴ ProN", "Noto Sans JP", sans-serif
   }
 
   .overview-bottom {
@@ -605,6 +607,49 @@ header {
     text-align: center;
   }
 
+  .sponser-undisplay {
+    display: none;
+  }
+
+  .coming-soon-gold {
+    display: inline-block;
+    font-size: 35px;
+    width: 30%;
+    vertical-align: top;
+    padding: 50px 35%;
+  }
+
+  .coming-soon-silver {
+    display: inline-block;
+    font-size: 32px;
+    vertical-align: top;
+    padding: 50px 10px;
+  }
+
+  .coming-soon-bronze {
+    display: inline-block;
+    font-size: 32px;
+    width: 23%;
+    vertical-align: top;
+    padding: 50px 10px;
+  }
+
+  .coming-soon-media {
+    display: inline-block;
+    font-size: 32px;
+    width: 23%;
+    vertical-align: top;
+    padding: 50px 10px;
+  }
+
+  .coming-soon-Sponsorship {
+    display: inline-block;
+    font-size: 32px;
+    width: 23%;
+    vertical-align: top;
+    padding: 50px 10px;
+  }
+
   .sponser-title {
     font-family: 'CorpoFontB';
     font-size: 80px;
@@ -630,6 +675,7 @@ header {
 
   .sponser-gold-exp {
     padding-left: 40px;
+    text-align: left;
   }
 
   .sponser-silver-title {
@@ -647,10 +693,6 @@ header {
   .sponser-silver-img {
     width: 30%;
     padding: 5px 10px;
-  }
-
-  .sponser-silver-img-1 {
-    padding-bottom: 5%;
   }
 
   .sponser-bronze-title {
@@ -692,7 +734,8 @@ header {
   }
 
   .sponser-media-img-1 {
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
 
   .sponser-cooperation-title {
@@ -724,6 +767,20 @@ header {
     padding-bottom: 6%;
   }
 
+  .sponser-Sponsorship-title {
+    font-family: 'CorpoFontB';
+    font-size: 80px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  .sponsre-Sponsorship-element {
+    display: flex;
+    width: 100%;
+  }
+
+
+
   /* お申込み */
   .application-container {
     text-align: center;
@@ -741,68 +798,26 @@ header {
     width: 55%;
   }
 
-footer {
-  background-color: #ffe35f;
-  display: flex;
-  padding-bottom: 6%;
-}
+  footer {
+    background-color: #ffe35f;
+    padding: 2% 5% 2% 2%;
+  }
 
-.footer-left {
-  width: 50%;
-}
+  .footer-title {
+    font-size: 40px;
+    padding-bottom: 1.5%;
+  }
 
-.footer-left-inquiry {
-  padding-top: 7%;
-  padding-left: 7%;
-}
+  .footer-table {
+    font-family: "ヒラギノ角ゴ ProN", "Noto Sans JP", sans-serif;
+    font-size: 32px;
+  }
 
-.footer-left-inquiry-title {
-  font-size: 40px;
-}
+  .footer-table-left {
+    vertical-align: top;
+    width: 50%;
+  }
 
-.footer-left-secretariat {
-  padding-top: 7%;
-  padding-left: 7%;
-  padding-right: 7%;
-}
-
-.footer-left-secretariat-title {
-  font-size: 32px;
-}
-
-.footer-left-secretariat-detail {
-  font-size: 32px;
-}
-
-.footer-right {
-  width: 50%;
-  padding-top: 10%;
-  padding-right: 2%;
-}
-
-.footer-right-sponsor {
-  padding-top: 3%;
-}
-
-.footer-right-sponsor-contents {
-  font-size: 32px;
-}
-
-.footer-right-support {
-  padding-top: 5%;
-}
-
-.footer-right-support-contents {
-  font-size: 32px;
-}
-
-.footer-right-cooperation {
-  padding-top: 5%;
-}
-
-.footer-right-cooperation-contents {
-  font-size: 32px;
-}
 
 /*========= ナビゲーションのためのCSS ===============*/
 
